@@ -26,7 +26,7 @@ O curso está dividido nos seguintes módulos principais, com base no conteúdo 
 Cada módulo pode ter sua própria pasta com projetos de exemplo ou anotações detalhadas.
 
 ### Pré-requisitos
-Certifique-se de ter o [Node.js](https://nodejs.org/) e o [NVM](https://github.com/nvm-sh/nvm) instalados.
+Certifique-se de ter o [Node.js](https://nodejs.org/) (v24.6.0) e o [NVM](https://github.com/nvm-sh/nvm) (1.2.2) instalados.
 
 ### Executando os Projetos
 
