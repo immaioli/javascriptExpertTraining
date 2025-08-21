@@ -42,5 +42,4 @@ Este projeto demonstra a base de testes usando apenas Node.js. Embora frameworks
 - **[immaioli](https://github.com/immaioli)** - Irineu Marcelo Maioli
 
 ## Licença
-
-Este projeto está sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
+Este projeto está sob a Licença [MIT](https://opensource.org/license/MIT).

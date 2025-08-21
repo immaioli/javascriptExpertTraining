@@ -47,4 +47,4 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) (v24.6.0) e o [NVM](https:
 
 
 ## Licença
-Este projeto está sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+Este projeto está sob a Licença [MIT](https://opensource.org/license/MIT).
