@@ -43,7 +43,8 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) (v24.6.0) e o [NVM](https:
     `npm test`
 
 ## Autor
-- **[immaioli](https://github.com/immaioli)**
+- **[immaioli](https://github.com/immaioli)** - Irineu Marcelo Maioli
+
 
 ## Licença
 Este projeto está sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
