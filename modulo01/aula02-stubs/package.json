@@ -1,0 +1,19 @@
+{
+  "name": "aula02-stubs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/service.test.js"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "keywords": [],
+  "author": "immaioli - Irineu Marcelo Maioli",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sinon": "^15.0.1"
+  }
+}
