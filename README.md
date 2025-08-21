@@ -34,7 +34,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) (v24.6.0) e o [NVM](https:
     `git clone https://github.com/immaioli/javascriptExpertTraining`
 
 2.  Navegue até a pasta do projeto:
-    `cd Formação JavaScript Expert`
+    `cd javascriptExpertTraining`
 
 3.  Instale as dependências:
     `npm install`
