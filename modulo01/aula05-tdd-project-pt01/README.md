@@ -33,7 +33,7 @@ falsos (nomes, e-mails, endereços, etc.). Isso nos permite:
 -   Garantir maior **realismo** nos cenários.
 -   Reduzir a dependência de dados estáticos e repetitivos.
 
-⚠️ **Observação Importante sobre o Faker**\
+⚠️ **Observação Importante sobre o Faker**
 Como muita gente sabe, o pacote **faker** foi descontinuado pois o
 desenvolvedor original encerrou o projeto.
 Para os nossos exemplos, você **não precisa migrar** para a nova versão,
@@ -48,7 +48,7 @@ npm install faker@5.1.0
 
 Caso queira utilizar a alternativa que surgiu após o encerramento,
 existe o pacote **faker-js**, que possui a **mesma API**.
-Acesse a página do pacote para verificar:\
+Acesse a página do pacote para verificar:
 👉 [@faker-js/faker](https://www.npmjs.com/package/@faker-js/faker)
 
 ------------------------------------------------------------------------
@@ -77,7 +77,7 @@ permitindo cenários dinâmicos e realistas.
 
 ### Pré-requisitos
 
--   Node.js instalado (desenvolvido e testado com a versão 24.6.0)\
+-   Node.js instalado (desenvolvido e testado com a versão 24.6.0)
 -   Recomenda-se usar um gerenciador de versões como o NVM
 
 ### Passos
@@ -103,10 +103,10 @@ permitindo cenários dinâmicos e realistas.
 ## Referências
 
 -   [Behavior Driven Development: BDD and Functional
-    Testing](https://medium.com/javascript-scene/behavior-driven-development-bdd-and-functional-testing-62084ad7f1f2)\
+    Testing](https://medium.com/javascript-scene/behavior-driven-development-bdd-and-functional-testing-62084ad7f1f2)
 -   [Unit Testing, TDD and
-    BDD](https://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/#:~:text=When%20applied%20to%20automated%20testing,implementation%20detail%20in%20unit%20tests.&text=You%20should%20not%20test%20implementation%2C%20but%20instead%20behavior)\
--   [Mocha-Cucumber](https://www.npmjs.com/package/mocha-cucumber)\
+    BDD](https://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/#:~:text=When%20applied%20to%20automated%20testing,implementation%20detail%20in%20unit%20tests.&text=You%20should%20not%20test%20implementation%2C%20but%20instead%20behavior)
+-   [Mocha-Cucumber](https://www.npmjs.com/package/mocha-cucumber)
 -   [BDD with JavaScript, Cucumber and
     Gherkin](https://www.sitepoint.com/bdd-javascript-cucumber-gherkin/)
 
