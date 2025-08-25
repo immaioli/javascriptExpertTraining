@@ -1,0 +1,23 @@
+[
+    {
+        "id": "d484b16e-0a6b-4ca5-af45-05e4c8cbf57d",
+        "name": "Accord",
+        "releaseYear": 2025,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "986c3a8c-6f18-453e-9341-dc7e2055cf86",
+        "name": "CX-9",
+        "releaseYear": 2025,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "c18e2851-c8c5-460b-996b-a58ee3915f3d",
+        "name": "Malibu",
+        "releaseYear": 2024,
+        "available": true,
+        "gasAvailable": true
+    }
+]
