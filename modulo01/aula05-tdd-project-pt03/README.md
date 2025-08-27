@@ -66,32 +66,16 @@ Dependências nativas do Node.js:
 
 ## Como Executar
 ### Pré-requisitos
-- Node.js instalado (**v14+**)  
+- Node.js instalado (**v24+**)  
 - NPM configurado  
 
 ### Passos
 
-1.  Clone este repositório.
-
-2.  Navegue até a pasta do projeto.
-
-3.  Instale as dependências:
-
-    ```
-    npm install
-    ```
-
-4.  Execute os testes:
-
-    ```
-    npm test
-    ```
-
-5.  Verifique a cobertura:
-
-    ```
-    npm test -- --coverage
-    ```
+1.  Clone este repositório: `git clone https://github.com/immaioli/javascriptExpertTraining.git`
+2.  Navegue até a pasta do projeto: `cd javascriptExpertTraining/modulo01/aula05-tdd-project-pt03`
+3.  Instale as dependências: `npm install`
+4.  Execute os testes: `npm test`
+5.  Verifique a cobertura: `npm test:cov`
 
 ---
 

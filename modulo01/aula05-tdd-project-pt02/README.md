@@ -1,76 +1,87 @@
-# Resumo do Projeto: aula05-tdd-project-pt02
+# Test Driven Development e Behaviour Driven Development - parte 02
+Este projeto é parte do repositório **[immaioli/javascriptExpertTraining](https://github.com/immaioli/javascriptExpertTraining)** e implementa um sistema de **aluguel de carros** utilizando **TDD (Test Driven Development)** e **BDD (Behaviour Driven Development)**.
 
-O projeto **`aula05-tdd-project-pt02`** é uma aplicação que simula um sistema de aluguel de carros.  
-Ele foi desenvolvido utilizando a metodologia de **Test-Driven Development (TDD)** e estruturado em múltiplas camadas (Layers Pattern), aplicando conceitos de **repositório genérico**, testes automatizados e boas práticas de design.
+O objetivo é demonstrar como escrever testes guiados pelas histórias de usuário (Use Cases), aplicando **mocks, spies, stubs e fake timers**, garantindo que o código seja **determinístico, limpo e totalmente coberto por testes automatizados**.
 
 ---
 
-## Parte 02 - Banco de Dados com Faker
+## Casos de Uso Implementados
+### 1. Implementar repositório base
+- Criação de um **BaseRepository** genérico para acesso a dados;
+- Abstração da camada de persistência usando arquivos JSON;
+- Separação clara entre lógica de negócio e acesso a dados.
 
-Nesta parte, o banco de dados foi criado com auxílio da biblioteca **Faker**, permitindo a geração de dados fictícios para simulação de cenários reais em testes.  
-A camada de **BaseRepository** lê e manipula os dados a partir de arquivos JSON, mantendo a separação clara entre persistência e lógica de negócio.
+### 2. Desenvolver serviço de aluguel
+- Implementação do **CarService** com lógica de negócio para aluguel de carros;
+- Métodos para seleção aleatória de carros disponíveis;
+- Cálculo de preços baseado em categorias e faixas etárias.
+
+### 3. Testar camadas do sistema
+- Testes unitários para todas as camadas do sistema;
+- Uso de stubs e mocks para isolar dependências externas;
+- Garantia de cobertura completa de testes.
+
+---
+
+## Conceitos Chave
+### TDD — Test Driven Development
+O código é escrito **após os testes**, garantindo que cada funcionalidade nasceu orientada por um caso de teste.
+
+### BDD — Behaviour Driven Development
+Os testes são escritos baseados no **comportamento esperado pelo usuário**, seguindo histórias como as definidas no arquivo `story.md`.
+
+### O que são Mocks e Stubs?
+Mocks (ou stubs/spies) são objetos simulados que imitam dependências externas ou intermediárias.  
+Eles permitem que os testes sejam focados na **regra de negócio**, sem depender de dados externos (banco de dados, APIs ou funções complexas).
+
+---
+
+## Dependências Utilizadas
+Este projeto utiliza as seguintes dependências e ferramentas de teste:
+
+- [**Mocha**](https://mochajs.org/) — `^10.2.0`
+- [**Chai**](https://www.chaijs.com/) — `^4.3.7`
+- [**Sinon.js**](https://sinonjs.org/) — `^15.2.0`
+
+Dependências nativas do Node.js:  
+- `fs/promises`  
+- `path`  
 
 ---
 
 ## Estrutura do Projeto
-
-- **Entidades**
-  - **Car**: Representa um carro com atributos como ID, nome, ano de lançamento, disponibilidade e combustível.
-  - **CarCategory**: Representa uma categoria de carros, contendo lista de IDs e preço associado.
-  - **Customer**: Representa um cliente com atributos como ID, nome e idade.
-
-- **Serviços**
-  - **CarService**: Contém a lógica de negócios do aluguel, como seleção de carros disponíveis e cálculo do preço final.
-
-- **Repositórios**
-  - **BaseRepository**: Fornece métodos genéricos para leitura e busca em arquivos JSON.
-
-- **Testes**
-  - Desenvolvidos com **Mocha**, **Chai** e **Sinon**, garantindo que cada camada funcione conforme o esperado.
-  - Aplicação de TDD e BDD para estruturar os testes de forma orientada a comportamento e evitar os erros mais comuns ao iniciar com TDD.
+- `src/service/carService.js` → regras de negócio do aluguel (escolha de carro, cálculo de preço).  
+- `src/repository/baseRepository.js` → abstração de acesso a dados (JSON simulado).  
+- `src/entities/` → entidades principais (`Customer`, `CarCategory`, `Car`).  
+- `test/unitTests/` → testes unitários utilizando **Mocha, Chai e Sinon**.
 
 ---
 
-## Casos de Uso
+## Como Executar
+### Pré-requisitos
+- Node.js instalado (**v24+**)  
+- NPM configurado  
 
-1. **Aluguel de Carro**:  
-   Usuário verifica a disponibilidade em uma categoria, e o sistema escolhe um carro aleatoriamente.
+### Passos
 
-2. **Cálculo de Preço**:  
-   O sistema calcula o preço final do aluguel considerando a idade do cliente e a quantidade de dias.
-
-3. **Registro de Transação**:  
-   Registro da operação de aluguel, incluindo dados do cliente, carro e valor final.
-
----
-
-## Recursos Estudados
-
-Durante o desenvolvimento foram utilizados conceitos e referências como:
-
-- [Behavior-Driven Development (BDD) and Functional Testing](https://medium.com/javascript-scene/behavior-driven-development-bdd-and-functional-testing-62084ad7f1f2)  
-- [Unit Testing, TDD and BDD](https://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/#:~:text=When%20applied%20to%20automated%20testing,implementation%20detail%20in%20unit%20tests.&text=You%20should%20not%20test%20implementation%2C%20but%20instead%20behavior)  
-- [Mocha-Cucumber](https://www.npmjs.com/package/mocha-cucumber)  
-- [BDD com JavaScript, Cucumber e Gherkin](https://www.sitepoint.com/bdd-javascript-cucumber-gherkin/)
+1.  Clone este repositório: `git clone https://github.com/immaioli/javascriptExpertTraining.git`
+2.  Navegue até a pasta do projeto: `cd javascriptExpertTraining/modulo01/aula05-tdd-project-pt02`
+3.  Instale as dependências: `npm install`
+4.  Execute os testes: `npm test`
+5.  Verifique a cobertura: `npm test:cov`
 
 ---
 
-## Ferramentas Utilizadas
-
-- **Node.js**
-- **Mocha** (test runner)
-- **Chai** (assertions)
-- **Sinon** (stubs, spies, mocks)
-- **Faker** (geração de dados falsos)
+## Referências de Estudo
+- [Behavior Driven Development (BDD) and Functional Testing — Medium - JavaScript Scene](https://medium.com/javascript-scene/behavior-driven-development-bdd-and-functional-testing-62084ad7f1f2)  
+- [Unit testing, TDD and BDD explained — CodeUtopia](https://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/#:~:text=When%20applied%20to%20automated%20testing)  
+- [Mocha-Cucumber (npm)](https://www.npmjs.com/package/mocha-cucumber)  
+- [BDD in JavaScript with Cucumber and Gherkin — SitePoint](https://www.sitepoint.com/bdd-javascript-cucumber-gherkin/)  
 
 ---
 
 ## Autor
-
 - **[immaioli](https://github.com/immaioli)** - Irineu Marcelo Maioli
 
----
-
 ## Licença
-
 Este projeto está sob a Licença [MIT](https://opensource.org/license/MIT).
