@@ -16,17 +16,17 @@ assert.deepStrictEqual(Array.from(set), ['0', '1', '2', '3'])
 assert.deepStrictEqual(Array.from(new Set([...arr1, ...arr2])), ['0', '1', '2', '3'])
 
 // console.log('set.keys', set.keys())
-// console.log('set.values', set.values()) // só existe por conta do Map
+// console.log('set.values', set.values()) // only exists because of Map
 
-// No Array comum, para saber se um item existe
-// [].indexOf('1') !== -1 ou [0].includes(0)
+// In regular Array, to know if an item exists
+// [].indexOf('1') !== -1 or [0].includes(0)
 assert.ok(set.has('3'))
 
-// mesma teoria do Map, mas você sempre trabalha com a lista toda
-// não tem get, então pode saber se o item está ou não no Array e é isso.
-// na documentação tem exemplos sobre como fazer uma interceção, saber o que tem em uma lista e não tem em outra e assim por diante
+// same theory as Map, but you always work with the whole list
+// there is no get, so you can know if the item is in the Array or not and that's it.
+// in the documentation there are examples on how to do an intersection, know what is in one list and not in another and so on
 
-// tem nos dois Arrays
+// has in both Arrays
 const users01 = new Set([
     'huguinho',
     'luizinho',
@@ -47,10 +47,10 @@ assert.deepStrictEqual(Array.from(difference), ['luizinho', 'zezinho'])
 
 // --- weakset
 
-// mesma idea do weakMap
-// não é enumerável (iterável)
-// só trabalha com chaves como referência
-// só tem metodos simples
+// same idea as weakMap
+// it is not enumerable (iterable)
+// only works with reference keys
+// only has simple methods
 
 const user1 = { id: 123 }
 const user2 = { id: 321 }
