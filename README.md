@@ -8,10 +8,10 @@ O objetivo deste repositório é documentar meu progresso, aplicar os conceitos 
 
 O curso está dividido nos seguintes módulos principais, com base no conteúdo apresentado:
 
-- **Introdução ao Node Version Manager (NVM):** Gerenciamento de múltiplas versões do Node.js.
-- **JavaScript Testing:** Criação de testes robustos e confiáveis para aplicações JavaScript.
-- **Conceitos Fundamentais sobre o Ciclo de Vida do JavaScript:** Uma imersão profunda no funcionamento interno da linguagem.
-- **Advanced JavaScript Data Types:** Exploração de tipos de dados avançados e suas aplicações.
+- [**Introdução ao Node Version Manager (NVM)**](./modulo01): Gerenciamento de múltiplas versões do Node.js.
+- [**JavaScript Testing**](./modulo02): Criação de testes robustos e confiáveis para aplicações JavaScript.
+- [**Conceitos Fundamentais sobre o Ciclo de Vida do JavaScript**](./modulo03/): Uma imersão profunda no funcionamento interno da linguagem.
+- [**Advanced JavaScript Data Types**](./modulo04/): Exploração de tipos de dados avançados e suas aplicações.
 - **Expressões Regulares (RegExp):** Padrões e técnicas para manipulação de strings.
 - **Design Patterns:** Estudo de padrões de projeto (Creational, Behavioural, Structural) para soluções de arquitetura.
 - **Masterizando o NPM:** Gerenciamento eficiente de dependências e scripts de projeto.
