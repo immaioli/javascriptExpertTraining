@@ -12,7 +12,7 @@ O curso está dividido nos seguintes módulos principais, com base no conteúdo 
 - [**JavaScript Testing**](./modulo02): Criação de testes robustos e confiáveis para aplicações JavaScript.
 - [**Conceitos Fundamentais sobre o Ciclo de Vida do JavaScript**](./modulo03/): Uma imersão profunda no funcionamento interno da linguagem.
 - [**Advanced JavaScript Data Types**](./modulo04/): Exploração de tipos de dados avançados e suas aplicações.
-- **Expressões Regulares (RegExp):** Padrões e técnicas para manipulação de strings.
+- [**Expressões Regulares (RegExp)](./modulo05/):** Padrões e técnicas para manipulação de strings.
 - **Design Patterns:** Estudo de padrões de projeto (Creational, Behavioural, Structural) para soluções de arquitetura.
 - **Masterizando o NPM:** Gerenciamento eficiente de dependências e scripts de projeto.
 - **Node.js Command Line Interface (CLI):** Criação de ferramentas de linha de comando.
